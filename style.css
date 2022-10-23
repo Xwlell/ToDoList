@@ -1,0 +1,102 @@
+* {margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #636262;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    min-height: 100vh;
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#new-task-form {
+    display: flex;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-task-input {
+    flex: 1 1 0%;
+    background-color: #FCFCFC;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 1rem;
+    caret-color: plum;
+}
+
+#new-task-submit {
+    color: #636262;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+main {
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list {
+    padding-bottom: 1rem;
+    overflow-y: auto;
+    overflow-x:hidden;
+    max-width: 800px;
+    max-height: 400px;
+}
+
+#tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color:#FCFCFC;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 1rem;
+}
+
+#tasks .task .content .text {
+    color: #636262;
+    font-size: 1rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+#tasks .task .content {
+    flex: 1 1 0%;
+}
+
+#tasks .task .content .text:not(:read-only) {
+    color: plum;
+}
+
+#tasks .task .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+}
+
