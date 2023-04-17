@@ -1,0 +1,169 @@
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.headers {
+    display: flex;
+    height: 140px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.header-logo {
+    width: 20%;
+    height: 100%;
+    padding-left: 30px;
+    align-items: center;
+    text-align: left;
+    display: flex;
+    font-size: 40px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 60%;
+    padding-bottom: 5px;
+}
+
+#ligth {
+    height: 47px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.header-btn {
+    width: 20%;
+    height: 100%;
+    justify-content: end;
+    align-items: center;
+    padding-right: 30px;
+    display: flex;
+}
+
+.btn-change {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-position: bottom left, bottom right, top center;
+    background-repeat: no-repeat;
+    background-size: 700px, 600px, 110px;
+    background-attachment: fixed;
+    overflow-y: auto;
+}
+   
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
+.task-form {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 715px;
+    height: 70px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#task-submit {
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#task-input {
+    justify-content: center;
+    text-align: left;
+    padding-left: 10px;
+    margin-right: 10px; 
+    height: 35px;
+    width: 631px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+
+}
+
+.task-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    overflow-x:hidden; 
+}
+
+.tasks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+    width: 715px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+#task-list-input {
+    font-size: 1rem;
+    height: 35px;
+    width: 532px;
+    margin-right: 10px;
+    text-align: left;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.check {
+    height: 35px;
+    width: 35px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.uncheck {
+    height: 35px;
+    width: 35px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.edit {
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.delete {
+    height: 35px;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4px;
+    border-radius: 10px;
+}
+
+
